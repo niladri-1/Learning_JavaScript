@@ -88,12 +88,12 @@ This tutorial is structured into various lessons, each focusing on a specific co
 
 1. Clone this repository to your local machine:
     ```bash
-    git clone https://github.com/yourusername/javascript-tutorial.git
+    git clone https://github.com/niladri-1/JavaScript_Learning.git
     ```
 
 2. Navigate to the project directory:
     ```bash
-    cd javascript-tutorial
+    cd JavaScript_Learning
     ```
 
 3. Open the files in your preferred code editor to start learning.
