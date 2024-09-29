@@ -12,5 +12,5 @@ function function2() {
 	console.log(x); // 10
 }
 
-function1();
-function2();
+function1(); // 20
+function2(); // 10

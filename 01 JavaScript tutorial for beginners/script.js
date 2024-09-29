@@ -1,8 +1,8 @@
-console.log(`Hello`);
-console.log(`I like pizza`);
+console.log(`Hello`); // Hello
+console.log(`I like pizza`); // I like pizza
 
-window.alert(`This is an alert`);
-window.alert(`I like pizza`);
+window.alert(`This is an alert`); // This is an alert
+window.alert(`I like pizza`); // I like pizza
 
 // this is a comment
 

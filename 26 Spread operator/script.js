@@ -14,7 +14,7 @@ console.log(minimum); // 1
 
 let userName = "Bro Code";
 let letters = [...userName].join("-");
-console.log(letters); // b-r-o- -c-o-d-e
+console.log(letters); // B-r-o- -C-o-d-e
 
 
 
@@ -22,4 +22,5 @@ let fruits = ["Apples", "Oranges", "Bananas"];
 let vegitables = ["Carrots", "Celery", "Potatoes"];
 
 let foods = [...fruits, ...vegitables, "Eggs", "Milk"];
-console.log(foods);
+
+console.log(foods); // ["Apples", "Oranges", "Bananas", "Carrots", "Celery", "Potatoes", "Eggs", "Milk"]

@@ -58,4 +58,4 @@ switch (true) {
     default:
         letterGrade = "F";
 }
-console.log(letterGrade);
+console.log(letterGrade); // B

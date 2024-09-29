@@ -9,25 +9,25 @@ const temp = 30;
 
 // AND
 if (temp > 0 && temp <= 30) {
-    console.log("Weather is Good!");
+    console.log("Weather is Good!"); // true
 }
 else {
-    console.log("The weather is BAD!");
+    console.log("The weather is BAD!"); // false
 }
 
 // OR
 if (temp <= 0 || temp > 30) {
-    console.log("Weather is BAD!");
+    console.log("Weather is BAD!"); // true
 }
 else {
-    console.log("Weather is Good!");
+    console.log("Weather is Good!"); // false
 }
 
 // NOT
 const isSunny = false;
 
 if (isSunny) {
-    console.log("It's Sunny");
+    console.log("It's Sunny"); // false
 } else {
-    console.log("It's not Sunny");
+    console.log("It's not Sunny"); // true
 }

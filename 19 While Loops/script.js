@@ -7,7 +7,7 @@ while (userName === "" || userName === null) {
     userName = window.prompt(`Enter your name`);
 }
 
-document.getElementById("myId").textContent = `Hello, ${userName}`
+document.getElementById("myId").textContent = `Hello, ${userName}`; // Hello, John
 
 
 
@@ -20,9 +20,9 @@ while (!loggedIn) {
 
     if (username === "myAdmin" && password === "myPassword") {
         loggedIn = true;
-        document.getElementById("myId").textContent = `Hello ${username}, you are logged in.`;
+        document.getElementById("myId").textContent = `Hello ${username}, you are logged in.`; // Hello, myAdmin, you are logged in.
     }
     else {
-        console.log(`Login failed. Try again!`);
+        console.log(`Login failed. Try again!`); // Login failed. Try again!
     }
 }

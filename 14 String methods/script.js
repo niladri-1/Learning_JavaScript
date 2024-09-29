@@ -3,16 +3,16 @@
 let userName = "Bro-Code";
 let date = "15-08-1947";
 
-console.log(userName.charAt(0));
-console.log(userName.indexOf("o"));
-console.log(userName.length);
-console.log(userName.trim());
-console.log(userName.toUpperCase());
-console.log(userName.toLowerCase());
-console.log(userName.repeat(3));
+console.log(userName.charAt(0)); //B
+console.log(userName.indexOf("o")); //2
+console.log(userName.length); //10
+console.log(userName.trim()); //Bro-Code
+console.log(userName.toUpperCase()); //BRO-CODE
+console.log(userName.toLowerCase()); //bro-code
+console.log(userName.repeat(3)); //Bro-CodeBro-CodeBro-Code
 console.log(userName.startsWith("b")); //true or false
 console.log(userName.endsWith("e")); //true or false
 
-console.log(date.replaceAll("-", "/"));
-console.log(date.padStart(15, "0"));
-console.log(date.padEnd(15, "0"));
+console.log(date.replaceAll("-", "/")); // 15/08/1947
+console.log(date.padStart(15, "0")); // 00000015
+console.log(date.padEnd(15, "0")); // 00000000000000015

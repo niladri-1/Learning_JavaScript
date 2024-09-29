@@ -12,11 +12,11 @@ let extraChars = userName.slice(1);
 extraChars = extraChars.toLowerCase();
 userName = letter + extraChars;
 
-console.log(userName);
+console.log(userName); // Bro-Code
 
 
 // ---------  METHOD CHAINING -----------
 
 userName = userName.trim().charAt(0).toUpperCase() + userName.trim().slice(1).toLowerCase();
 
-console.log(userName);
+console.log(userName); // Bro-Code

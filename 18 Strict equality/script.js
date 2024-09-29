@@ -8,25 +8,25 @@
 const PI = 3.14;
 
 if (PI == "3.14") {
-    console.log("Values are same!");
+    console.log("Values are same!"); // true
 } else {
-    console.log("Values are not same!");
+    console.log("Values are not same!"); // false
 }
 
 if (PI === "3.14") {
-    console.log("Values & datatypes are same!");
+    console.log("Values & datatypes are same!"); // true
 } else {
-    console.log("Values & datatypes are not same!");
+    console.log("Values & datatypes are not same!"); // false
 }
 
 if (PI != "3.14") {
-    console.log("Values are not same!");
+    console.log("Values are not same!"); // true
 } else {
-    console.log("Values are same!");
+    console.log("Values are same!"); // false
 }
 
 if (PI !== "3.14") {
-    console.log("Values & datatypes are not same!");
+    console.log("Values & datatypes are not same!"); // true
 } else {
-    console.log("Values & datatypes are same!");
+    console.log("Values & datatypes are same!"); // false
 }

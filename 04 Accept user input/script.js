@@ -12,5 +12,5 @@ let userName;
 
 document.getElementById("mySubmit").onclick = function(){
     userName = document.getElementById("mytext").value;
-    document.getElementById("myh1").textContent = `Wellcome, ${userName}`
+    document.getElementById("myh1").textContent = `Wellcome, ${userName}`;
 }

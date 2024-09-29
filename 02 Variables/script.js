@@ -8,25 +8,25 @@
 let age = 25;
 let price = 10.99;
 
-console.log(typeof age);
-console.log(`You are ${age} years old.`);
-console.log(`The price is $${price}`);
+console.log(typeof age); // number
+console.log(`You are ${age} years old.`); // You are 25 years old.
+console.log(`The price is $${price}`); // The price is $10.99
 
 // String
 let firstname = "Bro";
 let email = "abc123@gmail.com";
 
-console.log(typeof firstname);
-console.log(`You name is ${firstname}`);
-console.log(`You like ${email}`);
+console.log(typeof firstname); // string
+console.log(`You name is ${firstname}`); // You name is Bro
+console.log(`You like ${email}`); // You like abc123@gmail.com
 
 // Booleans
 let isOnline = true;
 let isStudent = false;
 
-console.log(typeof isOnline);
-console.log(`Bro is online: ${isOnline}`);
-console.log(`You are student: ${isStudent}`);
+console.log(typeof isOnline); // boolean
+console.log(`Bro is online: ${isOnline}`); // Bro is online: true
+console.log(`You are student: ${isStudent}`); // You are student: false
 
 
 // Overall
