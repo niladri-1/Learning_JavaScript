@@ -6,12 +6,12 @@
 // age+=1;
 // console.log(age);
 
-let x;
-let y;
-let z;
+let x; // NaN 'number'
+let y; // undefined string
+let z; // false 'boolean'
 
 // let x = ""; // 0 'number'
-// let y = ""; // "" 'string'
+// let y = ""; // "" string
 // let z = ""; // false 'boolean'
 
 // let x = "0"; // 0 'number'
@@ -19,7 +19,7 @@ let z;
 // let z = "0"; // true 'boolean'
 
 // let x = "pizza"; // NaN 'number'
-// let y = "pizza"; // pizza 'string'
+// let y = "pizza"; // pizza string
 // let z = "pizza"; // true 'boolean'
 
 x = Number(x);
