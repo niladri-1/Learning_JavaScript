@@ -10,17 +10,17 @@ let x;
 let y;
 let z;
 
-// let x = "";
-// let y = "";
-// let z = "";
+// let x = ""; // 0 'number'
+// let y = ""; // "" 'string'
+// let z = ""; // false 'boolean'
 
-// let x = "0";
-// let y = "0";
-// let z = "0";
+// let x = "0"; // 0 'number'
+// let y = "0"; // 0 string
+// let z = "0"; // true 'boolean'
 
-// let x = "pizza";
-// let y = "pizza";
-// let z = "pizza";
+// let x = "pizza"; // NaN 'number'
+// let y = "pizza"; // pizza 'string'
+// let z = "pizza"; // true 'boolean'
 
 x = Number(x);
 y = String(y);
