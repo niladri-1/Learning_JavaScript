@@ -2,6 +2,7 @@
 //             Declared code once, use it whenever you want.
 //             Call the function to execute its code.
 
+// #Examples 1
 function happyBirthday(username, age) {
     console.log(`Happy Birthaday to ${username}`);
     console.log(`You are ${age} years old!`);
@@ -10,6 +11,7 @@ happyBirthday("Spongebob", 30); // Happy Birthaday to spongebob | You are 30 yea
 happyBirthday("Patrick", 37); // Happy Birthaday to Patrick | You are 37 years old!
 
 
+// #Examples 2
 function add(x, y) {
     let result = x + y;
     return result;
@@ -17,13 +19,13 @@ function add(x, y) {
 let answer = add(2, 3);
 console.log(answer); // 5
 
-
 function divition(x, y) {
     return x / y;
 }
 console.log(divition(6, 3)); // 2
 
 
+// #Examples 3
 function isEven(number) {
     return number % 2 === 0 ? `Yes, this is even` : `This is odd`;
 }
@@ -31,6 +33,7 @@ console.log(isEven(7)); // Yes, this is even
 console.log(isEven(6)); // This is odd
 
 
+// #Examples 4
 function isValidEmail(email) {
     return email.includes("@") ? true : false;
 }
@@ -38,6 +41,7 @@ console.log(isValidEmail("brocode@.com")); // false
 console.log(isValidEmail("brocode.com")); // false
 
 
+// #Examples 5
 function isValidPassword(password) {
     return password.length > 6 ? true : false;
 }
