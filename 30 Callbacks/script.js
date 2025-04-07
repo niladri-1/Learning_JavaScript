@@ -2,10 +2,10 @@
 //            to another function.
 
 
-// 				used to hendel asynchronous operations:
+// 				Used to hendel asynchronous operations:
 // 				1. Reading a file
 // 				2. Network requests
-// 				3. Interacting with Dtabase
+// 				3. Interacting with Database
 
 // 				"Hey, when you're done, call this next."
 
