@@ -12,7 +12,7 @@ let extraChars = userName.slice(1);
 extraChars = extraChars.toLowerCase();
 userName = letter + extraChars;
 
-console.log(userName); // Bro-Code
+console.log(userName); // Brocode
 
 
 // ---------  METHOD CHAINING -----------
