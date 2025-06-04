@@ -10,21 +10,18 @@ const food3 = "hotdogs";
 const food4 = "sushi";
 
 function openFridge(...foods) {
-	console.log(foods); // [ 'Pizza', 'hamburgers', 'hotdogs', 'sushi' ]
-	console.log(...foods); // Pizza hamburgers hotdogs sushi
+	console.log(foods);       // [ 'Pizza', 'hamburgers', 'hotdogs', 'sushi' ]
+	console.log(...foods);    // Pizza hamburgers hotdogs sushi
 }
-openFridge(food1, food2, food3, food4); // [ 'Pizza', 'hamburgers', 'hotdogs', 'sushi' ]
+openFridge(food1, food2, food3, food4);
 
 
-function getFood(...foods) {
-	return foods; // [ 'Pizza', 'hamburgers', 'hotdogs', 'sushi' ]
+function sayHello(greeting, ...names) {
+	console.log(greeting);  // Hello
+	console.log(...names);     // [ 'Alice', 'Bob', 'Charlie' ]
 }
-const foods = getFood(food1, food2, food3, food4);
-console.log(foods); // [ 'Pizza', 'hamburgers', 'hotdogs', 'sushi' ]
-console.log(...foods); // Pizza hamburgers hotdogs sushi
 
-
-
+sayHello("Hello", "Alice", "Bob", "Charlie");
 
 
 
