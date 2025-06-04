@@ -18,7 +18,7 @@ openFridge(food1, food2, food3, food4);
 
 function sayHello(greeting, ...names) {
 	console.log(greeting);  // Hello
-	console.log(...names);     // [ 'Alice', 'Bob', 'Charlie' ]
+	console.log(...names);     // Alice Bob Charlie
 }
 
 sayHello("Hello", "Alice", "Bob", "Charlie");
