@@ -4,10 +4,12 @@
 // 					(unpack the elements)
 
 let numbers = [1, 2, 3, 4, 5];
-let max = Math.max(...numbers);
+let max1 = Math.max(numbers);
+let max2 = Math.max(...numbers);
 let minimum = Math.min(...numbers);
 console.log(numbers); // [1, 2, 3, 4, 5]
-console.log(max); // 5
+console.log(max1); // NaN
+console.log(max2); // 5
 console.log(minimum); // 1
 
 
