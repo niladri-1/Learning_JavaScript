@@ -11,22 +11,19 @@
 
 
 // Example 1
-hello(goodbye); // hello
-hello(leave); // good-bye
-
-
-function hello(callback) {
-	console.log("hello");
-	callback();
+function doSomething(callback) {
+	console.log("Start");
+	setTimeout(() => {
+		console.log("Doing something...");
+		callback();
+	}, 2000); // simulate 2-second delay
 }
 
-function goodbye() {
-	console.log("good-bye");
+function done() {
+	console.log("Done!");
 }
 
-function leave() {
-	console.log("leave");
-}
+doSomething(done);
 
 
 // Example 2
