@@ -1,3 +1,7 @@
+// .reduce() =  reduce the elements of an array
+// 				to a single value
+
+
 // Example 1
 const valuesPrice = [50, 20, 60, 30, 10];
 const maxNumber = valuesPrice.reduce(maxValue);
