@@ -13,3 +13,9 @@ function suffle(array) {
 }
 
 console.log(cards);
+
+/*[
+  6,   7,   4, 'J', 'A', 10,
+  9,   'Q', 8, 3,   5,   2,
+  'K'
+]*/
