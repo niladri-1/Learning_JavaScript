@@ -7,50 +7,22 @@
 // finally { } = (optional) Always executes. Used mostly for clean up
 // 				  ex. close files, close connections, release resources
 
-
 try {
-	console.log(x);
-	// NETWORK ISSUE
-	// PROMISE REJECTION
-	// SECURITY ERRORS
-}
-catch (error) {
-	console.log(error); //ReferenceError: x is not defined
-}
-finally{
-	// CLOSE FILES
-	// CLOSE CONNECTIONS
-	// RELEASE RESOURCE
-	console.log('This always execute');
-}
-console.log('You reach to end!');
-/*
-ReferenceError: x is not defiened
-This always execute
-You reach to end!
-*/
+	const divident = Number(window.prompt('Enter a divident?'));
+	const divisor = Number(window.prompt('Enter a divisor?'));
 
+	if (divisor == 0) {
+		throw new Error("You can't divide by zero!");
+	}
 
+	if (isNaN(divident) || isNaN(divisor)) {
+		throw new Error("value should be a number");
+	}
 
-try {
-	console.log('start');
-	// NETWORK ISSUE
-	// PROMISE REJECTION
-	// SECURITY ERRORS
+	const result = divident / divisor;
+	console.log(result);
+} catch (error) {
+	console.error(error);
 }
-catch (error) {
-	console.log(error); //ReferenceError: x is not defined
-}
-finally{
-	// CLOSE FILES
-	// CLOSE CONNECTIONS
-	// RELEASE RESOURCE
-	console.log('This always execute');
-}
-console.log('You reach to end!');
 
-/*
-start
-This always execute
-You reach to end!
-*/
+console.log('You reached at end!');
