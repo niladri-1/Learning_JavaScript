@@ -44,12 +44,12 @@ modDate.setHours(3);
 modDate.setMinutes(3);
 modDate.setSeconds(4);
 
-console.log(modDate);
-console.log(`${modDate}`);
+console.log(modDate); //2024-01-01T21:33:04.783Z
+console.log(`${modDate}`); //Tue Jan 02 2024 03:03:04 GMT+0530 (India Standard Time)
 
 
 
 // Compare two dates
 const dt1 = new Date("2024-12-31");
 const dt2 = new Date("2025-01-01");
-console.log(dt1 < dt2 ? `dt2: ${dt2}` : `dt1: ${dt1}`);
+console.log(dt1 < dt2 ? `dt2: ${dt2}` : `dt1: ${dt1}`); //dt2
