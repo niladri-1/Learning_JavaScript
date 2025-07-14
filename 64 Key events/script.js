@@ -21,7 +21,7 @@ document.addEventListener("keydown", event => {
 	if (event.key.startsWith("Arrow")) {
 
 		event.preventDefault();
-		
+
 		switch (event.key) {
 			case "ArrowUp":
 				y -= moveAmount;
@@ -33,10 +33,7 @@ document.addEventListener("keydown", event => {
 				x += moveAmount;
 				break;
 			case "ArrowLeft":
-				y -= moveAmount;
-				break;
-			case "ArrowDown":
-				y += moveAmount;
+				x -= moveAmount;
 				break;
 		}
 		myBox.style.top = `${y}px`;
