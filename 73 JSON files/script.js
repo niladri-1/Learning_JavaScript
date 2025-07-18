@@ -5,54 +5,61 @@
 // 		  JSON.stringify() = converts a JS object to a JSON string.
 // 		  JSON.parse() = converts a JSON string to a JSON object.
 
-const names = ["Spongebob", "Patrick", "Squidward", "Sandy"];
-const jsonNames = `["Spongebob", "Patrick", "Squidward", "Sandy"]`;
-const namesJsonString = JSON.stringify(names);
-console.log(namesJsonString);
-const jsonNamesString = JSON.parse(jsonNames);
-console.log(jsonNamesString);
+
+// 1. JavaScript Array
+const names = ["Spongebob", "Patrick"];
+console.log("Original Array:", names); // Output: ["Spongebob", "Patrick"]
+
+const namesAsJson = JSON.stringify(names);
+console.log("Stringified JSON:", namesAsJson); // Output: '["Spongebob","Patrick"]'
+
+const namesBackToArray = JSON.parse(namesAsJson);
+console.log("Parsed Back to Array:", namesBackToArray); // Output: ["Spongebob", "Patrick"]
 
 
+// 2. JavaScript Object
+const person = {
+	name: "Spongebob",
+	age: 30,
+	isEmployed: true,
+};
+console.log("Original Object:", person); // Output: { name: "Spongebob", age: 30, isEmployed: true }
 
-const person = { "name": "Spongebob", "age": 30, "isEmployed": true, "hobbies": ["Jellyfishing", "Cooking", "Karate"]}
-const jsonPerson = `{ "name": "Spongebob", "age": 30, "isEmployed": true, "hobbies": ["Jellyfishing", "Cooking", "Karate"]}`
-const personJsonString = JSON.stringify(person);
-console.log(personJsonString);
-const jsonPersonString = JSON.parse(jsonPerson);
-console.log(jsonPersonString);
+const personAsJson = JSON.stringify(person);
+console.log("Stringified JSON:", personAsJson); // Output: '{"name":"Spongebob","age":30,"isEmployed":true}'
+
+const personBackToObject = JSON.parse(personAsJson);
+console.log("Parsed Back to Object:", personBackToObject); // Output: { name: "Spongebob", age: 30, isEmployed: true }
 
 
+// 3. Array of Objects
 const people = [
-	{ "name": "Spongebob", "age": 30, "isEmployed": true },
-	{ "name": "Patrick", "age": 34, "isEmployed": false },
-	{ "name": "Squidward", "age": 50, "isEmployed": true },
-	{ "name": "Sandy", "age": 27, "isEmployed": false }
-]
-const jsonPeople = `[
-	{ "name": "Spongebob", "age": 30, "isEmployed": true },
-	{ "name": "Patrick", "age": 34, "isEmployed": false },
-	{ "name": "Squidward", "age": 50, "isEmployed": true },
-	{ "name": "Sandy", "age": 27, "isEmployed": false }
-]`
-const peopleJsonString = JSON.stringify(people);
-console.log(peopleJsonString);
-const jsonPeopleString = JSON.parse(peopleJsonString);
-console.log(jsonPeopleString);
+	{ name: "Spongebob", age: 30 },
+	{ name: "Patrick", age: 34 },
+];
+console.log("Original People Array:", people); // Output: [ { name: "Spongebob", age: 30 }, { name: "Patrick", age: 34 } ]
+
+const peopleAsJson = JSON.stringify(people);
+console.log("Stringified People JSON:", peopleAsJson); // Output: '[{"name":"Spongebob","age":30},{"name":"Patrick","age":34}]'
+
+const peopleBackToArray = JSON.parse(peopleAsJson);
+console.log("Parsed Back to People Array:", peopleBackToArray); // Output: [ { name: "Spongebob", age: 30 }, { name: "Patrick", age: 34 } ]
 
 
-
-
+// 4. FETCHING JSON FILES FROM SERVER (or local)
 fetch("names.json")
 	.then(response => response.json())
-	.then(values => values.forEach(value => console.log(value)))
-	.catch(error => console.error(error))
+	.then(data => console.log("Fetched names:", data)) // Output: Fetched names: ["Spongebob", "Patrick"]
+	.catch(error => console.error("Error loading names.json:", error));
+
 
 fetch("people.json")
 	.then(response => response.json())
-	.then(values => values.forEach(value => console.log(value)))
-	.catch(error => console.error(error))
+	.then(data => console.log("Fetched people:", data)) // Output: Fetched people: [{ name: "Spongebob", ... }, ...]
+	.catch(error => console.error("Error loading people.json:", error));
+
 
 fetch("person.json")
 	.then(response => response.json())
-	.then(value => console.log(value))
-	.catch(error => console.error(error))
+	.then(data => console.log("Fetched person:", data)) // Output: Fetched person: { name: "Spongebob", age: 30, ... }
+	.catch(error => console.error("Error loading person.json:", error));
